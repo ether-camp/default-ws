@@ -5,7 +5,7 @@ var Sandbox = require('ethereum-sandbox-client');
 describe('Contract', function() {
   this.timeout(60000);
   
-  var compiler = new Compiler('/root/workspace/contracts');
+  var compiler = new Compiler('contracts');
   var sandbox = new Sandbox('http://localhost:8555');
   var contract;
   
