@@ -29,6 +29,8 @@ describe('Contract', function() {
   it('prints string', function (done) {
     var str = "hello, ethereum!";
     
+    console.log('in the test');
+    
     var filter = sandbox.web3.eth.filter({
       address: contract.address
     });
