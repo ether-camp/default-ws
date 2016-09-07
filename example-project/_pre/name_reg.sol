@@ -1,6 +1,4 @@
-contract abstract {}
-
-contract owned is abstract {
+contract owned {
   address owner;
   function owned() {
     owner = msg.sender;
@@ -10,21 +8,21 @@ contract owned is abstract {
   }
 }
 
-contract mortal is abstract, owned {
+contract mortal is owned {
   function kill() {
     if (msg.sender == owner) suicide(owner);
   }
 }
 
 contract NameReg is mortal {
-    
+  
   mapping (address => bytes32) toName;
   mapping (bytes32 => address) toAddress;
   mapping (bytes32 => address) nameOwner;
-    
+  
   event Register(address indexed addr, bytes32 name);
   event Unregister(address indexed addre, bytes32 name);
-    
+  
   function NameReg() {
     toName[this] = "NameReg";
     toAddress["NameReg"] = this;

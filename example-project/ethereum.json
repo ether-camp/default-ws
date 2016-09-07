@@ -1,6 +1,8 @@
 {
   "contracts": "contracts",
   
+  "deploy": ["Contract"],
+  
   "env": {
     "block": {
       "coinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",
@@ -27,7 +29,10 @@
       },
       "0x084f6a99003dae6d3906664fdbf43dd09930d0e3": {
         "balance": 1234567890123345,
-        "source": "_pre/name_reg.sol"
+        "deploy": {
+          "source": "_pre/name_reg.sol",
+          "contract": "NameReg"
+        }
       }
     }
   }
