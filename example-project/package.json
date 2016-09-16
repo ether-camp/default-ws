@@ -3,7 +3,7 @@
   "dependencies": {
     "async": "^1.5.2",
     "ethereumjs-tx": "^1.0.0",
-    "web3": "^0.15.2"
+    "web3": "0.17.0-alpha"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
