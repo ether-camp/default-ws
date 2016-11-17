@@ -4,7 +4,7 @@ var Workbench = require('ethereum-sandbox-workbench');
 
 var workbench = new Workbench({
   contractsDirectory: 'contracts',
-  solcVersion: '0.3.6',
+  solcVersion: '0.4.2',
   defaults: {
     from: '0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826'
   }
