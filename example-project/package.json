@@ -7,8 +7,8 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
-    "ethereum-sandbox-helper": "^1.0.0-beta3",
-    "ethereum-sandbox-workbench": "^1.0.0-beta7",
+    "ethereum-sandbox-helper": "^1.0.0-beta6",
+    "ethereum-sandbox-workbench": "^1.0.0-beta11",
     "gulp": "^3.9.1",
     "gulp-mocha": "^2.2.0",
     "mocha": "^2.4.5",
